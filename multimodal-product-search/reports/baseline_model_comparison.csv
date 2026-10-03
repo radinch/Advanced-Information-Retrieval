@@ -1,0 +1,3 @@
+run,total,direct_valid,canonicalized_or_repaired,accepted_model_outputs,fallback
+Qwen2.5-1.5B-Instruct,20,2,0,2,18
+Qwen2.5-3B-Instruct,20,12,0,12,8

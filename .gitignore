@@ -1,0 +1,37 @@
+# Python and notebook state
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+.env.*
+
+# Generated book-search files
+lexical-book-search/indexes/
+lexical-book-search/sample_indexes/
+lexical-book-search/sample_*.json
+lexical-book-search/crawled.json
+lexical-book-search/preprocessed.json
+
+# Downloaded data and trained artifacts
+text-representation-learning/data/*
+!text-representation-learning/data/README.md
+text-representation-learning/*.csv
+text-representation-learning/*.pkl
+multimodal-product-search/data/*
+!multimodal-product-search/data/README.md
+!multimodal-product-search/data/qrels_pool.csv
+multimodal-product-search/artifacts/
+multimodal-product-search/outputs/
+multimodal-product-search/adapters/
+multimodal-product-search/runs/
+multimodal-product-search/.indexing_input/
+multimodal-product-search/reports/raw_llm_debug*.jsonl
+multimodal-product-search/reports/tests.*.txt

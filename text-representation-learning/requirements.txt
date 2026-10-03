@@ -1,0 +1,14 @@
+jupyterlab
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+nltk
+gensim
+tqdm
+gdown
+torch
+transformers
+peft
+accelerate

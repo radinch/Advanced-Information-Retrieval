@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []
+
+[project]
+name = "multimodal-product-search"
+version = "0.1.0"
+description = "Hybrid multimodal product retrieval, reranking, and grounded answer generation."
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy<2",
+    "pandas",
+    "pyarrow",
+    "scipy",
+]
+
+[project.optional-dependencies]
+index-checks = [
+    "faiss-cpu<1.11",
+]
+plots = [
+    "matplotlib",
+    "pillow",
+]
+retrieval = [
+    "accelerate",
+    "faiss-cpu<1.11",
+    "matplotlib",
+    "pillow",
+    "sentence-transformers[image]",
+    "torch",
+    "transformers",
+    "tqdm",
+]
+generation = [
+    "accelerate",
+    "bitsandbytes",
+    "datasets",
+    "pandas>=2.3.3",
+    "peft",
+    "pyarrow>=24.0.0",
+    "safetensors",
+    "torch",
+    "transformers>=4.51",
+]
